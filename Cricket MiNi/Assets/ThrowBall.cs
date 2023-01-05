@@ -1,0 +1,51 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ThrowBall : MonoBehaviour
+{
+
+    // The target position where the ball will be thrown
+    public Transform target;
+
+    // The force with which the ball will be thrown
+    public float throwForce = 20f;
+
+    // The ball prefab to instantiate when the ball is thrown
+    public GameObject ballPrefab;
+
+    // The position from which the ball will be instantiated
+    public Transform spawnPosition;
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        // Check if the space key is pressed
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+
+            // Instantiate a new ball at the spawn position
+            GameObject ball = Instantiate(ballPrefab, spawnPosition.position, Quaternion.identity);
+
+            // Calculate the direction of the throw based on the position of the target
+            Vector3 throwDirection = (target.position - spawnPosition.position).normalized;
+
+            // Add force to the ball in the desired direction
+            ball.GetComponent<Rigidbody>().AddForce(throwDirection * throwForce, ForceMode.Impulse);
+        }
+    }
+ 
+    public void ButtonThrow()
+    {
+         // Instantiate a new ball at the spawn position
+            GameObject ball = Instantiate(ballPrefab, spawnPosition.position, Quaternion.identity);
+
+            // Calculate the direction of the throw based on the position of the target
+            Vector3 throwDirection = (target.position - spawnPosition.position).normalized;
+
+            // Add force to the ball in the desired direction
+            ball.GetComponent<Rigidbody>().AddForce(throwDirection * throwForce, ForceMode.Impulse);
+    }
+
+}
