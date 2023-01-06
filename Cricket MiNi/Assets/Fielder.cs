@@ -14,6 +14,7 @@ public class Fielder : MonoBehaviour
         CapsuleCollider = GetComponent<CapsuleCollider>();
         rb = GetComponent<Rigidbody>();
     }
+
     public void OnTriggerStay(Collider other)
     {
 
