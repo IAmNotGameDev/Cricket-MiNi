@@ -20,7 +20,7 @@ public class ballhit : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Bat"))
         {
-            float ballForce = Random.Range(5f, 30f);
+            float ballForce = Random.Range(1f, 10f);
             float ballHeight = Random.Range(1f, 15f);
             float ballPosition = Random.Range(-5f, 5f);
 
