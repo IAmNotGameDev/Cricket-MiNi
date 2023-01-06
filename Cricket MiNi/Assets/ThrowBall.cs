@@ -41,7 +41,13 @@ public class ThrowBall : MonoBehaviour
  
     public void ButtonThrow()
     {
-         // Instantiate a new ball at the spawn position
+        StartCoroutine(Delay());
+
+        IEnumerator Delay()
+        {
+
+            yield return new WaitForSeconds(1f);
+            // Instantiate a new ball at the spawn position
             GameObject ball = Instantiate(ballPrefab, spawnPosition.position, Quaternion.identity);
 
             // Calculate the direction of the throw based on the position of the target
@@ -49,6 +55,15 @@ public class ThrowBall : MonoBehaviour
 
             // Add force to the ball in the desired direction
             ball.GetComponent<Rigidbody>().AddForce(throwDirection * throwForce, ForceMode.Impulse);
+        }
+      /*  // Instantiate a new ball at the spawn position
+        GameObject ball = Instantiate(ballPrefab, spawnPosition.position, Quaternion.identity);
+
+            // Calculate the direction of the throw based on the position of the target
+            Vector3 throwDirection = (target.position - spawnPosition.position).normalized;
+
+            // Add force to the ball in the desired direction
+            ball.GetComponent<Rigidbody>().AddForce(throwDirection * throwForce, ForceMode.Impulse);*/
     }
 
 }
