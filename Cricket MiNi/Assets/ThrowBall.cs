@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ThrowBall : MonoBehaviour
@@ -10,6 +11,8 @@ public class ThrowBall : MonoBehaviour
 
     // The force with which the ball will be thrown
     public float throwForce = 20f;
+
+    GameObject ClickToMove;
 
     // The ball prefab to instantiate when the ball is thrown
     public GameObject ballPrefab;
