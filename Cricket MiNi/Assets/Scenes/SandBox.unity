@@ -908,6 +908,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 6651633020023246331, guid: 934de9740e6fcbb4e94eb5bac52f6015, type: 3}
   playerAnimator: {fileID: 217764689}
+  sl: 0
+  sr: 0
+  sf: 0
+  sb: 0
 --- !u!95 &217764689
 Animator:
   serializedVersion: 5
@@ -3980,6 +3984,37 @@ MonoBehaviour:
   throwForce: 5
   ballPrefab: {fileID: 6651633020023246325, guid: 934de9740e6fcbb4e94eb5bac52f6015, type: 3}
   spawnPosition: {fileID: 1640685136}
+--- !u!1 &1712152770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1712152771}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1712152771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712152770}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.246499, y: 1.1393974, z: 9.801067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1745275842
 GameObject:
   m_ObjectHideFlags: 0
