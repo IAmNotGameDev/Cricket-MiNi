@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BatsmanControl : MonoBehaviour
 {   public Rigidbody rb;
@@ -11,17 +12,33 @@ public class BatsmanControl : MonoBehaviour
     public bool sr = false;
     public bool sf = false;
     public bool sb = false;
+    public GameObject Joystick;
+    Joystick js;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        js = GameObject.FindObjectOfType<Joystick>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        float h = js.Horizontal;
+        float v = js.Vertical;
 
-            }
+        if (h > 1f)
+            _ShotLeft();
+
+        else if (h < -1f)
+            _ShotRight();
+
+        if (v > 1f)
+            _ShotBack();
+        else if (v < -1f)
+
+        _ShotFront();
+    }
     public static BatsmanControl Instance
     {
         get

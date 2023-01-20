@@ -8,6 +8,7 @@ public class ballhit : MonoBehaviour
     public Rigidbody rb;
     private int ballTounchCount = 0;
     BatsmanControl bt;
+
     // Start is called before the first frame update
     void Start()
     {
