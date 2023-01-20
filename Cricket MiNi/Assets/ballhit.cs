@@ -13,6 +13,7 @@ public class ballhit : MonoBehaviour
     {
         Invoke("DestroyBall", 5f);
         bt = GameObject.FindObjectOfType<BatsmanControl>();
+        Physics.gravity = new Vector3(0, -0.0F, 0);
     }
 
     // Update is called once per frame
@@ -24,6 +25,7 @@ public class ballhit : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Bat"))
@@ -87,6 +89,7 @@ public class ballhit : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             ballTounchCount++;
+            Physics.gravity = new Vector3(0, -9.8F, 0);
         }
     }
 }
