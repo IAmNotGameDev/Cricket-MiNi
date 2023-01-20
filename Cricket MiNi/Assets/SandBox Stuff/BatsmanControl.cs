@@ -12,30 +12,27 @@ public class BatsmanControl : MonoBehaviour
     public bool sr = false;
     public bool sf = false;
     public bool sb = false;
-    public GameObject Joystick;
-    Joystick js;
+    public GameObject Joystick2;
+    Joystick2 js;
 
     // Start is called before the first frame update
     void Start()
     {
-        js = GameObject.FindObjectOfType<Joystick>();
+        js = GameObject.FindObjectOfType<Joystick2>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float h = js.Horizontal;
-        float v = js.Vertical;
-
-        if (h > 1f)
+        if (js.h > 1f)
             _ShotLeft();
 
-        else if (h < -1f)
+        else if (js.h < -1f)
             _ShotRight();
 
-        if (v > 1f)
+        if (js.v > 1f)
             _ShotBack();
-        else if (v < -1f)
+        else if (js.v < -1f)
 
         _ShotFront();
     }

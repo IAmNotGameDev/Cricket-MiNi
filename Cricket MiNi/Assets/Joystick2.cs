@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
+public class Joystick2 : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
 {
     private float maxJoystickDistance = 100f;
     private float minJoystickDistance = 0f;
 
-    public float horizontal;
-    public float vertical;
+    public float h;
+    public float v;
 
-    public float Horizontal { get { return horizontal; } }
-    public float Vertical { get { return vertical; } }
+    public float Horizontal { get { return h; } }
+    public float Vertical { get { return v; } }
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -32,8 +32,8 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointer
                 position = Vector2.zero;
             }
 
-            horizontal = position.x;
-            vertical = position.y;
+            h = position.x;
+            v = position.y;
         }
     }
 
@@ -44,7 +44,7 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointer
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        horizontal = 0f;
-        vertical = 0f;
+        h = 0f;
+        v = 0f;
     }
 }
