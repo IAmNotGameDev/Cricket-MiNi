@@ -147,3 +147,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6651633020023246331}
+  LeftForceMin: 0
+  LeftForceMax: 10
+  LeftHeightMin: 1
+  LeftHeightMax: 15
+  LeftPositionMin: -5
+  LeftPositionMax: 5
+  RightForceMin: -5
+  RightForceMax: -15
+  RightHeightMin: 1
+  RightHeightMax: 15
+  RightPositionMin: -5
+  RightPositionMax: 5
+  FrontForceMin: 1
+  FrontForceMax: 3
+  FrontHeightMin: 1
+  FrontHeightMax: 5
+  FrontPositionMin: -5
+  FrontPositionMax: 5
+  BackForceMin: -1
+  BackForceMax: -3
+  BackHeightMin: 1
+  BackHeightMax: 15
+  BackPositionMin: -5
+  BackPositionMax: 5
