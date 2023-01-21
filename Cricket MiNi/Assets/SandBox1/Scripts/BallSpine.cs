@@ -23,7 +23,7 @@ public class BallSpine : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground") && GM.OffSpineB)
         {
 
-            GetComponent<Rigidbody>().AddForce(LegSpine, ForceMode.Impulse);
+            GetComponent<Rigidbody>().AddForce(OffSpine, ForceMode.Impulse);
             GM.OffSpineB = false;
 
         }
