@@ -24,19 +24,7 @@ public class ThrowBall : MonoBehaviour
     void Update()
     {
 
-        // Check if the space key is pressed
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
 
-            // Instantiate a new ball at the spawn position
-            GameObject ball = Instantiate(ballPrefab, spawnPosition.position, Quaternion.identity);
-
-            // Calculate the direction of the throw based on the position of the target
-            Vector3 throwDirection = (target.position - spawnPosition.position).normalized;
-
-            // Add force to the ball in the desired direction
-            ball.GetComponent<Rigidbody>().AddForce(throwDirection * throwForce, ForceMode.Impulse);
-        }
     }
  
     public void ButtonThrow()
