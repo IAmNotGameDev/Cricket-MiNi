@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class GameManager : MonoBehaviour
     public Vector3 ballSpawnPosition;
     public TextMeshProUGUI runText;
     public int totalRuns= 0;
+
+    public bool applyForce = false;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -18,18 +22,25 @@ public class GameManager : MonoBehaviour
         UpdateRuns(0);
     }
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            Invoke("ThrowBall", 1.5f);
-
+            applyForce = true;
         }
-    }
 
-    public void ThrowBall()
+    }
+    public static GameManager Instance
     {
-        Instantiate(ballPrefab, ballSpawnPosition, Quaternion.identity);
+        get
+        {
+            if (instance == null)
+            {
+                instance = GameObject.FindObjectOfType<GameManager>();
+            }
+
+            return instance;
+        }
     }
 
     public void UpdateRuns(int score)
