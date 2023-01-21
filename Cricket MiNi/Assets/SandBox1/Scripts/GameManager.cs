@@ -30,6 +30,11 @@ public class GameManager : MonoBehaviour
         }
 
     }
+
+    public void SpineB()
+    {
+        applyForce = true;
+    }
     public static GameManager Instance
     {
         get

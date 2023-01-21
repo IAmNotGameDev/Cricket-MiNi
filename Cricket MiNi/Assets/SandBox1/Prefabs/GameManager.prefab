@@ -50,6 +50,7 @@ MonoBehaviour:
   ballSpawnPosition: {x: -0.19000006, y: 1.62, z: 2.273}
   runText: {fileID: 0}
   totalRuns: 0
+  applyForce: 0
 --- !u!114 &6403504364877876304
 MonoBehaviour:
   m_ObjectHideFlags: 0
