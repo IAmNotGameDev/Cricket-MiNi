@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI runText;
     public int totalRuns= 0;
 
-    public bool applyForce = false;
+    public bool LegSpineB = false;
+    public bool OffSpineB = false;
 
     // Start is called before the first frame update
     private void Awake()
@@ -26,14 +27,18 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            applyForce = true;
+            LegSpineB = true;
         }
 
     }
 
-    public void SpineB()
+    public void LS()
     {
-        applyForce = true;
+        LegSpineB = true;
+    }
+    public void FS()
+    {
+        OffSpineB = true;
     }
     public static GameManager Instance
     {
