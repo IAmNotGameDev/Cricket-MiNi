@@ -16,6 +16,10 @@ public class GameManager : MonoBehaviour
     public bool LegSpineB = false;
     public bool OffSpineB = false;
 
+
+    public bool FastBall = false;
+    public bool SlowBall = false;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -30,6 +34,16 @@ public class GameManager : MonoBehaviour
             LegSpineB = true;
         }
 
+    }
+
+    public void FB()
+    {
+        FastBall = true;
+    }
+
+    public void SB()
+    {
+        SlowBall = true;
     }
 
     public void LS()
