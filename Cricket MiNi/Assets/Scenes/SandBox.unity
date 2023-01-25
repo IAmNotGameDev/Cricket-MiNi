@@ -1066,8 +1066,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GM: {fileID: 530488647}
-  throwBall: {fileID: 0}
-  throwDelay: 2
+  throwBall: {fileID: 1640685137}
+  spineBall: {fileID: -6594350728712461579, guid: 934de9740e6fcbb4e94eb5bac52f6015, type: 3}
 --- !u!4 &776662612
 Transform:
   m_ObjectHideFlags: 0
