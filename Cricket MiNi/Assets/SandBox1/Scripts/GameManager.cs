@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject currentBall;
     public Vector3 ballSpawnPosition;
     public TextMeshProUGUI runText;
-    public int totalRuns= 0;
+    public int totalRuns = 0;
 
     public bool LegSpineB = false;
     public bool OffSpineB = false;
@@ -70,6 +70,6 @@ public class GameManager : MonoBehaviour
     public void UpdateRuns(int score)
     {
         totalRuns = totalRuns + score;
-        runText.text = "Runs:"+totalRuns;
+        runText.text = "Runs:" + totalRuns;
     }
 }
