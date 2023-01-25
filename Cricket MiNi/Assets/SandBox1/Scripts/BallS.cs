@@ -54,7 +54,7 @@ public class BallS : MonoBehaviour
     void Start()
     {
 
-        Invoke("DestroyBall", 5f);
+        Invoke("DestroyBall", 3f);
         bt = GameObject.FindObjectOfType<BatsmanControl>();
         Physics.gravity = new Vector3(0, -0.0F, 0);
     }

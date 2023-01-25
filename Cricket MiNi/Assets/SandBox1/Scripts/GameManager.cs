@@ -29,10 +29,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            LegSpineB = true;
-        }
+
 
     }
 

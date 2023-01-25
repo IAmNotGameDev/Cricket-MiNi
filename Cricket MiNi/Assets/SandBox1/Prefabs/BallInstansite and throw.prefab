@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  throwForce: 5
+  throwForce: 4
+  FastSpeed: 7
+  SlowSpeed: 5
   ballPrefab: {fileID: 6651633020023246325, guid: 934de9740e6fcbb4e94eb5bac52f6015, type: 3}
   spawnPosition: {fileID: 1138875411091278981}
