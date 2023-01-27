@@ -532,7 +532,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 305904995019479476, guid: fa3fa97b456f2b746ba2d6907265441e, type: 3}
   m_PrefabInstance: {fileID: 305904995232746212}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1385981682}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e25596c7db403642af6da624ed8dfda, type: 3}
@@ -2151,6 +2151,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263051607}
   m_CullTransparentMesh: 1
+--- !u!1 &1385981682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 305904995019479471, guid: fa3fa97b456f2b746ba2d6907265441e, type: 3}
+  m_PrefabInstance: {fileID: 305904995232746212}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1385981688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385981682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a993115bca3c4de4d80a97d3cd46f6f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  batmanControl: {fileID: 217764688}
 --- !u!1 &1435386359 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7273101566027416217, guid: d16ac4f9487f34f4aabe59dce2be8c20, type: 3}
@@ -2381,7 +2399,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 305904995019479471, guid: fa3fa97b456f2b746ba2d6907265441e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1385981688}
   m_SourcePrefab: {fileID: 100100000, guid: fa3fa97b456f2b746ba2d6907265441e, type: 3}
 --- !u!1001 &1138875412681528021
 PrefabInstance:
