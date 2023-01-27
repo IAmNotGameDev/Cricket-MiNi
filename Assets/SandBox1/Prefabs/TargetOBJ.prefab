@@ -99,7 +99,7 @@ MonoBehaviour:
   throwForce: 3
   joystick: {fileID: 0}
   damping: 0.01
-  xpositionLimitMin: -2
-  xpositionLimitMax: 2
-  zpositionLimitMin: -4
-  zpositionLimitMax: 4
+  xpositionLimitMin: 0
+  xpositionLimitMax: 1.5
+  zpositionLimitMin: -5
+  zpositionLimitMax: 1
