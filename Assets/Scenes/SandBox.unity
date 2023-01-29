@@ -3033,7 +3033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3649389810175372297, guid: 13ee2896cfa703142a924d175801a068, type: 3}
       propertyPath: m_Name
-      value: Sphere
+      value: TargetOBJ
       objectReference: {fileID: 0}
     - target: {fileID: 3649389810175372301, guid: 13ee2896cfa703142a924d175801a068, type: 3}
       propertyPath: m_RootOrder
